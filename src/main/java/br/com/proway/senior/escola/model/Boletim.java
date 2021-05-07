@@ -10,7 +10,7 @@ import java.util.Iterator;
  *  um {@link Aluno}. Para cada período é calculada a média das provas que 
  *  resulta na nota do boletim.
  *  
- * @author Bruno Marques <brunoliveira.marques@gmail.com>.
+ *  @author Bruno Marques <brunoliveira.marques@gmail.com>.
  *
  */
 public class Boletim {
