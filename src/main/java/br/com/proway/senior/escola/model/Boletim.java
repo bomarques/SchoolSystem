@@ -51,19 +51,20 @@ public class Boletim {
 	 * Periodo no formato YYYYMM
 	 */
 	public Integer getPeriodo() {
-		return periodo;
+		return periodo; 
 	}
 
 	/**
 	 *Retorna a média das provas atualizadas. 
 	 */
 	public Double getMedia() {
-		Double soma = 0.0;
-		for (int i = 0; i < this.provas.size(); i++) {
-			soma = soma + this.provas.get(i).getNota();
-			
-		}
-		return media = soma/this.provas.size();
+		return media;
+	}
+	
+	
+
+	public void setMedia(Double media) {
+		this.media = media;
 	}
 
 	/**
@@ -72,28 +73,11 @@ public class Boletim {
 	public ArrayList<Prova> getProvas() {
 		return provas;
 	}
-	/**
-	 * Ao adicionar prova a média é recalculada
-	 */
-	public void addProva(Prova prova) {
-		this.provas.add(prova);
-	}
 	
-	/**
-	 * Remove prova do boletim
-	 * Ao remover uma prova, a média é recalculada
-	 */
-	public void removeProva(int index) {
-		this.provas.remove(index);
-	}
-	
-	/**
-	 * Remove todas as provas do boletim
-	 */
-	public void removeTodasProvas() {
+	public void resetProvas() {
 		this.provas = new ArrayList<Prova>();
-
 	}
+	
 	
 	
 

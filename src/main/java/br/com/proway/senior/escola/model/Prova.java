@@ -18,8 +18,11 @@ public class Prova {
 	private Integer periodo;
 	private Aluno aluno;
 	private Materia materia;
-	private Double nota;
+	private Double nota = 0.0;
+	private int peso = 1;
 	
+
+
 	/**
 	 * Avaliação de desempenho do aluno.
 	 * 
@@ -68,7 +71,13 @@ public class Prova {
 		return materia;
 	}
 	
-	
+	public  int getPeso() {
+		return peso;
+	}
+
+	public void setPeso(int peso) {
+		this.peso = peso;
+	}
 
 	
 }
