@@ -1,7 +1,6 @@
 package br.com.proway.senior.escola.model;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 /**
  * Reúne as {@link Prova}s de um {@link Aluno}
@@ -14,6 +13,7 @@ import java.util.Iterator;
  *
  */
 public class Boletim {
+	private Integer id;
 	private Aluno aluno;
 	private Integer periodo;
 	private Double media;
@@ -38,6 +38,20 @@ public class Boletim {
 		this.media = 0.0;
 		this.provas = new ArrayList<Prova>();
 	}
+
+	
+	
+	public Integer getId() {
+		return id;
+	}
+
+
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+
 
 	/**
 	 * Aluno do boletim
